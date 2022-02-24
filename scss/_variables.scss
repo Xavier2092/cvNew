@@ -1,0 +1,31 @@
+/*Colores*/
+
+    /*textos*/
+$titleOne: #fff;
+$titleTwo: #4d8db1;
+$Bar: #71a4c1;
+$navBarLettersHover: #264658;
+$titleAbout: #a6c6d8;
+$lettersForm: #fdfdfd;
+$placeHolder:whitesmoke;
+
+    /*backgrounds*/
+$backgroundTwo: #4d8db1;
+
+/*Mixins*/
+@mixin standard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin pages{
+    padding: 80px 0;
+}
+
+@mixin titles{
+    margin-bottom: 40px;
+    font:60px 'Stint Ultra Condensed';
+    text-transform: uppercase;
+}
+

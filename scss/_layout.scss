@@ -1,0 +1,415 @@
+@import 'variables';
+
+*{
+    text-align: center;
+    font: 300 20px/1.4 'Roboto Condensed';
+    width: 100%;
+}
+    /*HEADER*/
+.header{
+    height: 400px;
+    background: url(./../images/bg-cv1.jpg) no-repeat center top fixed;
+    background-size:cover;
+    @include standard();
+    flex-direction: column;
+
+        .casillaimg{
+            width: 200px;
+            background: white;
+            border-radius: 50%;
+            opacity: 0.8;
+
+            .logoPrincipal{
+                padding: 7%;
+                margin-top: 12%;
+                height: 70%;
+                width: 80%;
+            }
+
+            .logoPrincipal:hover{
+                padding: 7%;
+                margin-top: 13%;
+            }
+        }
+
+        .casillaimg:hover{
+            cursor: pointer;
+            animation: none;
+            opacity: 0.55;
+        }
+
+    .name{
+		margin-top: 2%;
+		color: $titleOne;
+		font-size: larger;
+		font-weight: bolder;
+    }
+
+    img{
+        transition:1s all;
+    }
+}
+
+header:hover img{
+    transform:translate(0,-5px);
+}
+
+    /*CONTENT*/
+.content{
+    width: 1024px;
+    margin: 0 auto;
+}
+
+
+
+    /*NAVBAR*/
+.navbar{
+    @include standard();
+    border-bottom: 1px dashed #71a4c1;
+    background: $backgroundTwo;
+    color: $titleOne;
+
+    .content{
+
+        a{
+            min-height: 60px;
+            padding: 0 15px;
+            color: $titleOne; 
+            font: 22px 'Stint Ultra Condensed';
+            text-transform: uppercase;
+            text-decoration: none;
+            transition:.3s all;
+        }
+        
+        a:hover{
+            font-size: larger;
+            font-weight: bolder;
+            color: $navBarLettersHover;
+    }
+    }
+}
+.navbarFixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+    /*ABOUT*/
+.about{
+    background: $backgroundTwo;
+    @include pages();
+    perspective: 1000px;
+    @include standard();
+
+    .title{
+        color: $titleOne;
+        @include titles();
+    }
+
+    p{
+        color: $titleOne;
+        justify-content: center; 
+        align-items: center;
+    }
+}
+
+p{
+    margin-bottom: 30px;
+}
+
+    /*SKILLS*/
+.skills{
+    @include pages();
+    @include standard();
+    padding-bottom: 0; 
+
+    .title{
+        color: $titleTwo;
+        @include titles();
+    }
+}
+
+    /*PORTFOLIO*/
+.portfolio{
+    @include pages();
+    @include standard();
+    color: $titleOne;
+    background: $navBarLettersHover;
+
+    .title{
+        color: $titleOne;
+        @include titles();
+    }
+}
+
+.list-portfolio{
+    @include standard();
+    width: 100%;
+
+    li{
+        color: $titleTwo;
+        background: $titleOne;
+        justify-content: center; 
+        text-align: center;
+		width: 100px;
+		height: 100px;
+        transition: width 2s, height 2s, margin 2s;
+        margin: 50px auto;
+
+        .info{
+            margin-top: 15px;
+            display: none;
+            background: white;
+            opacity: 0.9;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        img{
+            transition:1s all;
+				width: 100px;
+        }
+
+        img:hover{
+            transform:rotate(360deg);
+        }
+    }
+
+    li:hover{
+        width: 100%;
+        height: 300px;
+        margin: 0 auto;
+
+        .info{
+            display:grid;
+            flex-direction:row;
+            z-index: 1000;
+        }
+    }
+}
+
+.imgSkills{
+    width: 100%;
+}
+
+.galeria{
+    @include standard();
+    flex-direction: column;
+}
+
+.foto1, .foto2, .foto3{
+    @include standard();
+}
+
+.imgSite1, .imgSite2, .imgSite3, .imgSite4, .imgSite5{
+    width: 35%;
+    margin: 5%;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgba(0, 0, 0, .19);
+    border: 1px solid white;
+    opacity: 0.6;
+}
+.imgSite1:hover, .imgSite2:hover, .imgSite3:hover, .imgSite4:hover, .imgSite5:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 purple, 0 6px 20px 0 rgba(0, 0, 0, .19);
+    border: 1px solid white;
+    border-radius: 2px;
+    opacity: 1;
+    transform: scale(1.5);
+    transition: all 1s;
+}
+
+.contactMe{
+    height: 450px; 
+    background: url(../images/bg-cv1.jpg) fixed; 
+    background-size: cover; 
+    color:#fff; 
+    text-align: center;
+
+    .title{
+        color: $titleOne;
+        @include titles();
+    }
+    
+    .formulario{
+        .form{
+        width:340px;
+        height:240px;
+        background:rgba(175, 174, 174, 0.8);
+        box-shadow:0 0 40px -10px #000;
+        margin:calc(30vh - 220px) auto;
+        padding:0 30px;
+        font-family:'Montserrat',sans-serif;
+        position:relative;
+        padding-top: 50px;
+
+            input{
+                width:100%;
+                padding:10px;
+                box-sizing:border-box;
+                background:none;
+                outline:none;
+                resize:none;
+                border:0;
+                font-family:'Montserrat',sans-serif;
+                transition:all .3s;
+                border-bottom:2px solid #bebed2;
+                color: white;
+            }
+            input:hover{
+                border-bottom:2px solid #fdfdff;
+                font-weight: bold;
+                color: #fdfdfd;
+            }
+            input::placeholder{
+                color: whitesmoke;
+            }
+
+            p:before{
+                content:attr(type);
+                display:block;
+                margin:28px 0 0;
+                font-size:14px;
+                color:#ffffff
+            }
+
+            #button{
+                float:right;
+                padding:8px 12px;
+                margin:8px 0 0;
+                font-family:'Montserrat',sans-serif;
+                background:#78788c;
+                color:#ffffff;
+                cursor:pointer;
+                transition:all .3s
+            }
+            #button:hover{
+                border:2px solid #78788c;
+                background:0;
+                color:#fff
+            }
+
+            div{
+                position:absolute;
+                bottom:-15px;
+                right:-20px;
+                background:rgba(80, 76, 76, 0.97);
+                color:#fff;
+                width:320px;
+                padding:8px 4px 5px 0;
+                border-radius:2px;
+                font-size:13px;
+                box-shadow:10px 10px 40px -14px #000;
+            }
+
+            span{
+                margin:0 5px 0 15px;
+            }
+        }
+    }
+}
+
+.socialMedia{
+    width: 3%;
+    opacity: 0.7;
+}
+.socialMedia:hover{
+    width: 5%;
+    opacity: 0.9;
+}
+
+.socialFooter{
+    width: 9%;
+    opacity: 1;
+}
+
+.socialFooter:hover{
+    width: 8%;
+    opacity: 0.5;
+}
+
+.btnMedia{
+    margin: 10px;
+    display: none;
+}
+
+.contactoFooter{
+    @include standard();
+}
+
+.btnMediaFooter{
+    margin: 10px;
+}
+a.scroll-top {
+    color: #fff;
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    z-index: 1000;
+    bottom: 50px;
+    right: 30px;
+    font-size: 20px;
+    background:  #264658;
+    border-radius: 3px !important;
+    text-align: center;
+    border: 1px solid #fff;
+}
+a.scroll-top i {
+    position: relative;
+    top: 2px;
+}
+
+footer{
+    color: #fff;
+    font-size: small;
+    background: #264658;
+}
+
+    /*MEDIASQUERIES*/
+    @media(max-width: 700px){
+		.list-portfolio{
+			display:contents;
+			/* flex-direction: column; */
+		}
+		.list-portfolio li {
+			border-radius: 1%;
+		}
+		.galeria .foto1, .foto2, .foto3{
+			display: contents;
+		}
+		.imgSite1, .imgSite2, .imgSite3, .imgSite4, .imgSite5{
+			width: 70%;
+		}
+		.imgSite1:hover, .imgSite2:hover, .imgSite3:hover, .imgSite4:hover, .imgSite5:hover{
+			opacity: 1;
+			transform: scale(1.3);
+			transition: all 1s;
+		}
+	}
+
+	@media(max-width: 570px) {
+		main{
+			display:contents; 
+			justify-content:center; 
+			align-items:center;
+			width: 100%;
+		}
+		.list-portfolio li{
+			padding: 5px;
+		}
+		.socialMedia{
+			width: 9%;
+		}
+		.socialMedia:hover{
+			width: 12%;
+		}
+		.contactMe .formulario .form{
+			width: 200px;
+		}
+
+		.contactMe .formulario .form div{
+			width: 300px;
+		}
+	}
