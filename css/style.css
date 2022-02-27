@@ -477,4 +477,12 @@ footer {
   }
 }
 
+.linkUni{
+  text-decoration: none;
+}
+
+.linkUni:hover{
+  font-size: 1.1em;
+  color: #050046;
+}
 /*# sourceMappingURL=style.css.map */
