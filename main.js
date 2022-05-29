@@ -62,6 +62,6 @@ $(document).ready(() => {
         window.open('https://xavier2092.github.io/conversorDeDivisas/');
     })
     $('.imgSite5').click(()=> {
-        window.open('https://calculadoravirtualimc.000webhostapp.com/');
+        window.open('https://cindie-front.vercel.app/');
     })
 })
