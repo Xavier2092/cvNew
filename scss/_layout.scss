@@ -198,11 +198,11 @@ p{
     flex-direction: column;
 }
 
-.foto1, .foto2, .foto3{
+.foto1{
     @include standard();
 }
 
-.imgSite1, .imgSite2, .imgSite3, .imgSite4, .imgSite5{
+.imgSite1, .imgSite2, .imgSite3, .imgSite4, .imgSite5, .imgSite6{
     width: 35%;
     margin: 5%;
     border-radius: 2px;
@@ -210,7 +210,8 @@ p{
     border: 1px solid white;
     opacity: 0.6;
 }
-.imgSite1:hover, .imgSite2:hover, .imgSite3:hover, .imgSite4:hover, .imgSite5:hover{
+
+.imgSite1:hover, .imgSite2:hover, .imgSite3:hover, .imgSite4:hover, .imgSite5:hover, .imgSite6:hover{
     cursor: pointer;
     box-shadow: 0 4px 8px 0 purple, 0 6px 20px 0 rgba(0, 0, 0, .19);
     border: 1px solid white;
@@ -376,13 +377,13 @@ footer{
 		.list-portfolio li {
 			border-radius: 1%;
 		}
-		.galeria .foto1, .foto2, .foto3{
+		.galeria .foto1{
 			display: contents;
 		}
-		.imgSite1, .imgSite2, .imgSite3, .imgSite4, .imgSite5{
+		.imgSite1, .imgSite2, .imgSite3, .imgSite4, .imgSite5, .imgSite6{
 			width: 70%;
 		}
-		.imgSite1:hover, .imgSite2:hover, .imgSite3:hover, .imgSite4:hover, .imgSite5:hover{
+		.imgSite1:hover, .imgSite2:hover, .imgSite3:hover, .imgSite4:hover, .imgSite5:hover, .imgSite6:hover{
 			opacity: 1;
 			transform: scale(1.3);
 			transition: all 1s;

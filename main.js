@@ -64,4 +64,7 @@ $(document).ready(() => {
     $('.imgSite5').click(()=> {
         window.open('https://cindie-front.vercel.app/');
     })
+    $('.imgSite6').click(()=> {
+        window.open('https://countries-xavier.vercel.app//');
+    })
 })
